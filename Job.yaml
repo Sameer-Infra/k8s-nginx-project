@@ -1,0 +1,16 @@
+kind: Job
+apiVersion: batch/v1
+metadata:
+  name: nginx-job
+  namespace: nginx
+spec:
+  completions: 5
+  parallelism: 1
+  backoffLimit: 3
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: demo-container
+          image: busybox
+          command: ["sh","-c","echo hello dosto ! && sleep 25"]
