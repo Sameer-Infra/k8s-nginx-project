@@ -1,7 +1,7 @@
 kind: CronJob
 apiVersion: batch/v1
 metadata:
-  name: sameer-cronjob
+  name: nginx-cronjob
   namespace: nginx
 spec:
   schedule: "* * * * *"
