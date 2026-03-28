@@ -1,0 +1,16 @@
+kind: CronJob
+apiVersion: batch/v1
+metadata:
+  name: sameer-cronjob
+  namespace: nginx
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: nginx-container
+              image: busybox
+              command:  ["sh","-c","date && echo  welcome-to-k8s ! "]
