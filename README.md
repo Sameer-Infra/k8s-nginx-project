@@ -1,3 +1,9 @@
+👨‍💻 Author
+
+Sameer | DevOps Engineer (Aspiring)
+
+GitHub: Sameer-Infra
+
 Kubernetes Nginx Project 🚀
 
 📌 Description
